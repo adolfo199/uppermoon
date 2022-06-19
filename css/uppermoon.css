@@ -1,0 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,600;1,700&display=swap");
+@import url(./light-theme.css);
+@import url(./form-controls.css);
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+html {
+  font-size: 1rem;
+}
+:root {
+  /*General Styles*/
+
+  --general-border-radius: 8px;
+  --general-box-shadow: 0px 3px 1px -2px rgb(0 0 0 / 20%),
+    0px 2px 2px 0px rgb(0 0 0 / 14%), 0px 1px 5px 0px rgb(0 0 0 / 12%);
+
+  /*Form Styles*/
+  --button-padding: 0.5em 1em;
+  --button-transitions-time: 0.26s;
+  --button-transitions-function: ease-in-out;
+  --button-transitions: border-color var(--button-transitions-time)
+      var(--button-transitions-function),
+    background 0.8s;
+  --button-font-size: 13.5px;
+}
+.disable-boxshadow {
+  box-shadow: none;
+}

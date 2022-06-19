@@ -1,0 +1,34 @@
+:root {
+  --demo-control-bkg: rgb(20, 157, 167);
+  --demo-control-border-radius: 8px;
+}
+.demo__container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 10px;
+}
+.demo__control__element {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+body {
+  height: 100vh;
+}
+.demo__control {
+  border: 2px solid var(--demo-control-bkg);
+  width: fit-content;
+  border-radius: var(--demo-control-border-radius);
+  overflow: hidden;
+  width: 100%;
+}
+.demo__control__source {
+  background-color: var(--demo-control-bkg);
+  color: white;
+  font-weight: bold;
+  padding: 0 1em;
+  padding: 0.25em 0.5em;
+}
+.demo__control__element {
+  padding: 1em;
+}
