@@ -1,5 +1,6 @@
 .ligth__theme {
-  --button--hover-active-border-color: rgba(143, 131, 131, 0);
+  /*Layout*/
+  --app-principal-bkg-color: rgb(241, 241, 241);
   /*Primary Setup*/
   --primary-color: rgb(0, 145, 133);
   --primary-color-values: 0, 255, 234;
@@ -19,4 +20,12 @@
   --warn-color: rgb(255, 145, 0);
   --warn-color-contrast-color: white;
   --warn-color-values: 255, 145, 0;
+
+  /*Text*/
+  --principal-text-color: black;
+
+  /*Shadows And effects*/
+  --first-shadow-color: rgb(0 0 0 / 20%);
+  --second-shadow-color: rgb(0 0 0 / 14%);
+  --third-shadow-color: rgb(0 0 0 / 12%);
 }

@@ -14,6 +14,7 @@
 }
 body {
   height: 100vh;
+  background: var(--app-principal-bkg-color);
 }
 .demo__control {
   border: 2px solid var(--demo-control-bkg);

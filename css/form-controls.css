@@ -1,3 +1,4 @@
+/*Buttons*/
 :is(input[type="button"], button, .button):not([__no_styled]):not([__no_styled]) {
   display: flex;
   padding: var(--button-padding);
@@ -9,6 +10,7 @@
   box-shadow: var(--general-box-shadow);
   cursor: pointer;
   background-color: var(--current--button--color);
+  color: var(--current--button-contrast--color);
   --ripple-color: rgba(var(--current--button--color-values), 0.1);
   font-weight: 500;
   font-family: "Poppins";
@@ -29,23 +31,48 @@
   transition: background 0s;
 }
 
-:is(input[type="button"], input[type="submit"], button, .button):not([__no_styled]):is(:not([color]), [color="primary"]) {
+:is(input, button, .button):not([__no_styled]):is(:not([color]), [color="primary"]) {
   --current--button--color: var(--primary-color);
   --current--button--color-values: var(--primary-color-values);
-  color: var(--primary-color-contrast-color);
+  --current--button-contrast--color: var(--primary-color-contrast-color);
 }
-:is(input[type="button"], input[type="submit"], button, .button):not([__no_styled])[color="secondary"] {
+:is(input, button, .button):not([__no_styled])[color="secondary"] {
   --current--button--color: var(--secondary-color);
   --current--button--color-values: var(--secondary-color-values);
-  color: var(--secondary-color-contrast-color);
+  --current--button-contrast--color: var(--secondary-color-contrast-color);
 }
-:is(input[type="button"], input[type="submit"], button, .button):not([__no_styled])[color="third"] {
+:is(input, button, .button):not([__no_styled])[color="third"] {
   --current--button--color: var(--third-color);
   --current--button--color-values: var(--third-color-values);
-  color: var(--third-color-contrast-color);
+  --current--button-contrast--color: var(--third-color-contrast-color);
 }
-:is(input[type="button"], input[type="submit"], button, .button):not([__no_styled])[color="warn"] {
+:is(input, button, .button):not([__no_styled])[color="warn"] {
   --current--button--color: var(--warn-color);
   --current--button--color-values: var(--warn-color-values);
-  color: var(--warn-color-contrast-color);
+  --current--button-contrast--color: var(--warn-color-contrast-color);
+}
+
+/*CheckBox*/
+input[type="checkbox"] {
+  width: var(--checkbox-size);
+  height: var(--checkbox-size);
+  margin: 0;
+  padding: 0;
+  margin-bottom: 0.2em;
+  border: none;
+  vertical-align: middle;
+  accent-color: var(--current--button--color);
+  outline-width: 2px;
+}
+input[type="checkbox"] ~ label,
+.checkbox__container label {
+  font-family: "Poppins";
+  text-transform: capitalize;
+  color: var(--principal-text-color);
+}
+.checkbox__container {
+  padding: 5px;
+}
+input[type="checkbox"]:disabled ~ label {
+  opacity: 0.5;
 }
