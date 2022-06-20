@@ -24,12 +24,34 @@ body {
   width: 100%;
 }
 .demo__control__source {
+  display: none;
+}
+.show__result__btn {
+  display: none !important;
+}
+.demo__control.show-code :is(.demo__control__source, .show__result__btn) {
+  display: block !important;
+}
+.demo__control.show-code :is(.demo__control__element, .show__code__btn) {
+  display: none !important;
+}
+.demo__control__header {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: space-between;
   background-color: var(--demo-control-bkg);
   color: white;
   font-weight: bold;
   padding: 0 1em;
   padding: 0.25em 0.5em;
 }
+.demo__control__header__action-buttons {
+  display: flex;
+  gap: 10px;
+}
 .demo__control__element {
   padding: 1em;
+}
+.demo__control__source pre {
 }

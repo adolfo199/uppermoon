@@ -13,7 +13,14 @@
 <body>
     <h2>Form Controls</h2>
     <div class="demo__container">
-        <!-- <div class="demo__control">
+        <div class="demo__control" id="input__button__demo">
+            <div class="demo__control__header">Input Button
+                <div class="demo__control__header__action-buttons">
+                    <button class="show__code__btn" onclick="showCode('input__button__demo')">Show Code</button>
+                    <button class="show__result__btn" onclick="showComponent('input__button__demo')">Show
+                        Result</button>
+                </div>
+            </div>
             <div class="demo__control__source">
                 &lt;input type="button" value="demo"&gt;
             </div>
@@ -21,7 +28,14 @@
                 <input class="ff" type="button" value="Click on me!">
             </div>
         </div>
-        <div class="demo__control">
+        <div class="demo__control" id="buttons__and__color__demo">
+            <div class="demo__control__header">Buttons and colors
+                <div class="demo__control__header__action-buttons">
+                    <button class="show__code__btn" onclick="showCode('buttons__and__color__demo')">Show Code</button>
+                    <button class="show__result__btn" onclick="showComponent('buttons__and__color__demo')">Show
+                        Result</button>
+                </div>
+            </div>
             <div class="demo__control__source">
                 &lt;button&gt;Click on me!&lt;/button&gt;
             </div>
@@ -32,7 +46,14 @@
                 <button color="warn">warn</button>
             </div>
         </div>
-        <div class="demo__control">
+        <div class="demo__control" id="link__button">
+            <div class="demo__control__header">"a" tag as button
+                <div class="demo__control__header__action-buttons">
+                    <button class="show__code__btn" onclick="showCode('link__button')">Show Code</button>
+                    <button class="show__result__btn" onclick="showComponent('link__button')">Show
+                        Result</button>
+                </div>
+            </div>
             <div class="demo__control__source">
                 &lt;a href="" class="button"&gt;I'm a link&lt;/a&gt;
             </div>
@@ -40,11 +61,18 @@
                 <a href="" class="button">I'm a link</a>
             </div>
         </div>
-        <div class="demo__control">
+        <div class="demo__control" id="checkboxs">
+            <div class="demo__control__header">Checkboxes
+                <div class="demo__control__header__action-buttons">
+                    <button class="show__code__btn" onclick="showCode('checkboxs')">Show Code</button>
+                    <button class="show__result__btn" onclick="showComponent('checkboxs')">Show
+                        Result</button>
+                </div>
+            </div>
             <div class="demo__control__source">
-                &lt;label class="checkbox__container"&gt;
-                &lt;input type="checkbox" name="myCheckBox" id=""&gt;
-                &lt;label for="myCheckBox"&gt;My CheckBox&lt;/label&gt;
+                &lt;label class="checkbox__container"&gt;<br>
+                &lt;input type="checkbox" name="myCheckBox" id=""&gt; <br>
+                &lt;label for="myCheckBox"&gt;My CheckBox&lt;/label&gt; <br>
                 &lt;/label&gt;
             </div>
             <div class="demo__control__element">
@@ -61,13 +89,46 @@
                     <label for="disabled">disabled</label>
                 </label>
             </div>
-        </div> -->
-        <div class="demo__control" style="grid-column: 1/-1;">
+        </div>
+        <div class="demo__control" style="grid-column: 1/-1;" id="tables__demo">
+            <div class="demo__control__header">Checkboxes
+                <div class="demo__control__header__action-buttons">
+                    <button class="show__code__btn" onclick="showCode('tables__demo')">Show Code</button>
+                    <button class="show__result__btn" onclick="showComponent('tables__demo')">Show
+                        Result</button>
+                </div>
+            </div>
             <div class="demo__control__source">
-                A Table
+                &lt;table color=""&gt;<br>
+                &lt;thead&gt;<br>
+                &lt;tr&gt;<br>
+                &lt;th&gt;#&lt;/th&gt;<br>
+                &lt;th&gt;Column 2&lt;/th&gt;<br>
+                &lt;th&gt;Column 3&lt;/th&gt;<br>
+                &lt;th&gt;Column 4&lt;/th&gt;<br>
+                &lt;th&gt;Column 5&lt;/th&gt;<br>
+                &lt;/tr&gt;<br>
+                &lt;/thead&gt;<br>
+                &lt;tbody&gt;<br>
+                &lt;tr&gt;<br>
+                &lt;td&gt;1&lt;/td&gt;<br>
+                &lt;td&gt;Content 2&lt;/td&gt;<br>
+                &lt;td&gt;Content 3&lt;/td&gt;<br>
+                &lt;td&gt;Content 4&lt;/td&gt;<br>
+                &lt;td&gt;Content 5&lt;/td&gt;<br>
+                &lt;/tr&gt;<br>
+                &lt;tr&gt;<br>
+                &lt;td&gt;2&lt;/td&gt;<br>
+                &lt;td&gt;Content 2&lt;/td&gt;<br>
+                &lt;td&gt;Content 3&lt;/td&gt;<br>
+                &lt;td&gt;Content 4&lt;/td&gt;<br>
+                &lt;td&gt;Content 5&lt;/td&gt;<br>
+                &lt;/tr&gt;<br>
+                &lt;/tbody&gt;<br>
+                &lt;/table&gt;<br>
             </div>
             <div class="demo__control__element">
-                <table>
+                <table color="">
                     <thead>
                         <tr>
                             <th>#</th>
@@ -98,6 +159,8 @@
         </div>
     </div>
     <hr>
+    <script src="./hightLigther.js"></script>
+    <script src="./demo.js"></script>
 </body>
 
 </html>
