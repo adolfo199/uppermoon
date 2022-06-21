@@ -1,6 +1,8 @@
+@import url(https://fonts.googleapis.com/icon?family=Material+Icons+Outlined);
 :root {
   --demo-control-bkg: rgb(20, 157, 167);
   --demo-control-border-radius: 8px;
+  --on-full-screen-zindex: 2;
 }
 .demo__container {
   display: grid;
@@ -17,20 +19,27 @@ body {
   background: var(--app-principal-bkg-color);
 }
 .demo__control {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   border: 2px solid var(--demo-control-bkg);
-  width: fit-content;
   border-radius: var(--demo-control-border-radius);
   overflow: hidden;
   width: 100%;
+  height: 100%;
 }
 .demo__control__source {
   display: none;
+  padding: 0.2em 0.5em;
 }
 .show__result__btn {
   display: none !important;
 }
-.demo__control.show-code :is(.demo__control__source, .show__result__btn) {
+.demo__control.show-code :is(.demo__control__source) {
   display: block !important;
+}
+.demo__control.show-code :is(.show__result__btn) {
+  display: flex !important;
 }
 .demo__control.show-code :is(.demo__control__element, .show__code__btn) {
   display: none !important;
@@ -53,5 +62,38 @@ body {
 .demo__control__element {
   padding: 1em;
 }
-.demo__control__source pre {
+.demo__control__source__full-screen {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: auto;
+}
+.demo__fullscreen .demo__control {
+  position: fixed !important;
+  width: min(650px, 100vw);
+  height: min(350px, 100vh);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  background-color: white;
+  z-index: 11;
+  box-shadow: var(--general-box-shadow);
+  transition: height 0.4s cubic-bezier(0.01, 1.4, 0, 1.29),
+    width 0.4s cubic-bezier(0.01, 1.4, 0, 1.29);
+}
+.demo__fullscreen::before {
+  display: block;
+  content: "";
+  position: fixed;
+  background-color: rgba(var(--primary-color-values), 0.14);
+  backdrop-filter: blur(2px);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  /* height: 100vh; */
+  /* width: 100vh; */
+  z-index: 10;
 }

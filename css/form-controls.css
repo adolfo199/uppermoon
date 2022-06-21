@@ -1,7 +1,13 @@
 /*Buttons*/
-:is(input[type="button"], button, .button):not([__no_styled]):not([__no_styled]) {
-  display: flex;
+:is(input[type="button"], button, .button):not([__no_styled]) {
+  font-family: "Poppins", sans-serif;
+  text-transform: capitalize;
+  font-size: var(--button-font-size);
   padding: var(--button-padding);
+  min-height: 35.88px;
+}
+:is(input[type="button"], button, .button, .icon-button):not([__no_styled]) {
+  display: flex;
   border-radius: var(--general-border-radius);
   outline: none;
   border: none;
@@ -13,12 +19,12 @@
   color: var(--current--button-contrast--color);
   --ripple-color: rgba(var(--current--button--color-values), 0.1);
   font-weight: 500;
-  font-family: "Poppins", sans-serif;
-  text-transform: capitalize;
   text-decoration: none;
-  font-size: var(--button-font-size);
-  min-height: 35.88px;
   align-items: end;
+}
+.icon-button {
+  height: fit-content;
+  padding: 0.2em;
 }
 :is(input[type="button"], input[type="submit"], button, .button):not([__no_styled]):is(:hover, :focus) {
   background: var(--current--button--color)
@@ -31,22 +37,22 @@
   transition: background 0s;
 }
 
-:is(input, button, .button):not([__no_styled]):is(:not([color]), [color="primary"]) {
+:is(input, button, .button, .icon-button):not([__no_styled]):is(:not([color]), [color="primary"]) {
   --current--button--color: var(--primary-color);
   --current--button--color-values: var(--primary-color-values);
   --current--button-contrast--color: var(--primary-color-contrast-color);
 }
-:is(input, button, .button):not([__no_styled])[color="secondary"] {
+:is(input, button, .button, .icon-button):not([__no_styled])[color="secondary"] {
   --current--button--color: var(--secondary-color);
   --current--button--color-values: var(--secondary-color-values);
   --current--button-contrast--color: var(--secondary-color-contrast-color);
 }
-:is(input, button, .button):not([__no_styled])[color="third"] {
+:is(input, button, .button, .icon-button):not([__no_styled])[color="third"] {
   --current--button--color: var(--third-color);
   --current--button--color-values: var(--third-color-values);
   --current--button-contrast--color: var(--third-color-contrast-color);
 }
-:is(input, button, .button):not([__no_styled])[color="warn"] {
+:is(input, button, .button, .icon-button):not([__no_styled])[color="warn"] {
   --current--button--color: var(--warn-color);
   --current--button--color-values: var(--warn-color-values);
   --current--button-contrast--color: var(--warn-color-contrast-color);

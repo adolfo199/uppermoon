@@ -8,153 +8,195 @@
     <title>HTML controls, and table Demo</title>
     <link rel="stylesheet" href="./css/demo.css">
     <link rel="stylesheet" href="./css/uppermoon.css">
+
 </head>
 
 <body>
     <h2>Form Controls</h2>
     <div class="demo__container">
-        <div class="demo__control" id="input__button__demo">
-            <div class="demo__control__header">Input Button
-                <div class="demo__control__header__action-buttons">
-                    <button class="show__code__btn" onclick="showCode('input__button__demo')">Show Code</button>
-                    <button class="show__result__btn" onclick="showComponent('input__button__demo')">Show
-                        Result</button>
+        <div class="demo demo__fullscreen">
+            <div class="demo__control" id="input__button__demo">
+                <div class="demo__control__header">Input Button
+                    <div class="demo__control__header__action-buttons">
+                        <button class="show__code__btn" onclick="showCode('input__button__demo')">Show Code</button>
+                        <button class="show__result__btn" onclick="showComponent('input__button__demo')">Show
+                            Result</button>
+                    </div>
                 </div>
-            </div>
-            <div class="demo__control__source">
-                &lt;input type="button" value="demo"&gt;
-            </div>
-            <div class="demo__control__element">
-                <input class="ff" type="button" value="Click on me!">
+                <div class="demo__control__source">
+                    &lt;input type="button" value="demo"&gt;
+                </div>
+                <div class="demo__control__element">
+                    <input class="ff" type="button" value="Click on me!">
+                </div>
+                <div class="demo__control__source__full-screen">
+                    <span class="material-icons-outlined icon-button" color="warn"
+                        onclick="fullScreenDemo('input__button__demo')">
+                        fullscreen
+                    </span>
+                </div>
             </div>
         </div>
-        <div class="demo__control" id="buttons__and__color__demo">
-            <div class="demo__control__header">Buttons and colors
-                <div class="demo__control__header__action-buttons">
-                    <button class="show__code__btn" onclick="showCode('buttons__and__color__demo')">Show Code</button>
-                    <button class="show__result__btn" onclick="showComponent('buttons__and__color__demo')">Show
-                        Result</button>
+        <div class="demo">
+            <div class="demo__control" id="buttons__and__color__demo">
+                <div class="demo__control__header">Buttons and colors
+                    <div class="demo__control__header__action-buttons">
+                        <button class="show__code__btn" onclick="showCode('buttons__and__color__demo')">Show
+                            Code</button>
+                        <button class="show__result__btn" onclick="showComponent('buttons__and__color__demo')">Show
+                            Result</button>
+                    </div>
                 </div>
-            </div>
-            <div class="demo__control__source">
-                &lt;button&gt;Click on me!&lt;/button&gt;
-            </div>
-            <div class="demo__control__element">
-                <button color="primary">primary</button>
-                <button color="secondary">secondary</button>
-                <button color="third">third</button>
-                <button color="warn">warn</button>
+                <div class="demo__control__source">
+                    &lt;button&gt;Click on me!&lt;/button&gt;
+                </div>
+                <div class="demo__control__element">
+                    <button color="primary">primary</button>
+                    <button color="secondary">secondary</button>
+                    <button color="third">third</button>
+                    <button color="warn">warn</button>
+                </div>
+                <div class="demo__control__source__full-screen">
+                    <span class="material-icons-outlined icon-button" color="warn"
+                        onclick="fullScreenDemo('buttons__and__color__demo')">
+                        fullscreen
+                    </span>
+                </div>
             </div>
         </div>
-        <div class="demo__control" id="link__button">
-            <div class="demo__control__header">"a" tag as button
-                <div class="demo__control__header__action-buttons">
-                    <button class="show__code__btn" onclick="showCode('link__button')">Show Code</button>
-                    <button class="show__result__btn" onclick="showComponent('link__button')">Show
-                        Result</button>
+        <div class="demo">
+            <div class="demo__control" id="link__button">
+                <div class="demo__control__header">"a" tag as button
+                    <div class="demo__control__header__action-buttons">
+                        <button class="show__code__btn" onclick="showCode('link__button')">Show Code</button>
+                        <button class="show__result__btn" onclick="showComponent('link__button')">Show
+                            Result</button>
+                    </div>
                 </div>
-            </div>
-            <div class="demo__control__source">
-                &lt;a href="" class="button"&gt;I'm a link&lt;/a&gt;
-            </div>
-            <div class="demo__control__element">
-                <a href="" class="button">I'm a link</a>
+                <div class="demo__control__source">
+                    &lt;a href="" class="button"&gt;I'm a link&lt;/a&gt;
+                </div>
+                <div class="demo__control__element">
+                    <a href="" class="button">I'm a link</a>
+                </div>
+                <div class="demo__control__source__full-screen">
+                    <span class="material-icons-outlined icon-button" color="warn"
+                        onclick="fullScreenDemo('link__button')">
+                        fullscreen
+                    </span>
+                </div>
             </div>
         </div>
-        <div class="demo__control" id="checkboxs">
-            <div class="demo__control__header">Checkboxes
-                <div class="demo__control__header__action-buttons">
-                    <button class="show__code__btn" onclick="showCode('checkboxs')">Show Code</button>
-                    <button class="show__result__btn" onclick="showComponent('checkboxs')">Show
-                        Result</button>
+        <div class="demo">
+            <div class="demo__control" id="checkboxs">
+                <div class="demo__control__header">Checkboxes
+                    <div class="demo__control__header__action-buttons">
+                        <button class="show__code__btn" onclick="showCode('checkboxs')">Show Code</button>
+                        <button class="show__result__btn" onclick="showComponent('checkboxs')">Show
+                            Result</button>
+                    </div>
                 </div>
-            </div>
-            <div class="demo__control__source">
-                &lt;label class="checkbox__container"&gt;<br>
-                &lt;input type="checkbox" name="myCheckBox" id=""&gt; <br>
-                &lt;label for="myCheckBox"&gt;My CheckBox&lt;/label&gt; <br>
-                &lt;/label&gt;
-            </div>
-            <div class="demo__control__element">
-                <label class="checkbox__container">
-                    <input type="checkbox" name="Uncheck" id="" color="warn">
-                    <label for="Uncheck">Uncheck</label>
-                </label>
-                <label class="checkbox__container">
-                    <input type="checkbox" name="Checked" id="" color="warn" checked>
-                    <label for="Checked">Checked</label>
-                </label>
-                <label class="checkbox__container">
-                    <input type="checkbox" name="disabled" disabled id="" color="warn">
-                    <label for="disabled">disabled</label>
-                </label>
+                <div class="demo__control__source">
+                    &lt;label class="checkbox__container"&gt;<br>
+                    &lt;input type="checkbox" name="myCheckBox" id=""&gt; <br>
+                    &lt;label for="myCheckBox"&gt;My CheckBox&lt;/label&gt; <br>
+                    &lt;/label&gt;
+                </div>
+                <div class="demo__control__element">
+                    <label class="checkbox__container">
+                        <input type="checkbox" name="Uncheck" id="" color="warn">
+                        <label for="Uncheck">Uncheck</label>
+                    </label>
+                    <label class="checkbox__container">
+                        <input type="checkbox" name="Checked" id="" color="warn" checked>
+                        <label for="Checked">Checked</label>
+                    </label>
+                    <label class="checkbox__container">
+                        <input type="checkbox" name="disabled" disabled id="" color="warn">
+                        <label for="disabled">disabled</label>
+                    </label>
+                </div>
+                <div class="demo__control__source__full-screen">
+                    <span class="material-icons-outlined icon-button" color="warn"
+                        onclick="fullScreenDemo('checkboxs')">
+                        fullscreen
+                    </span>
+                </div>
             </div>
         </div>
-        <div class="demo__control" style="grid-column: 1/-1;" id="tables__demo">
-            <div class="demo__control__header">Checkboxes
-                <div class="demo__control__header__action-buttons">
-                    <button class="show__code__btn" onclick="showCode('tables__demo')">Show Code</button>
-                    <button class="show__result__btn" onclick="showComponent('tables__demo')">Show
-                        Result</button>
+        <div class="demo" style="grid-column: 1/-1;">
+            <div class="demo__control" id="tables__demo">
+                <div class="demo__control__header">Table
+                    <div class="demo__control__header__action-buttons">
+                        <button class="show__code__btn" onclick="showCode('tables__demo')">Show Code</button>
+                        <button class="show__result__btn" onclick="showComponent('tables__demo')">Show
+                            Result</button>
+                    </div>
                 </div>
-            </div>
-            <div class="demo__control__source">
-                &lt;table color=""&gt;<br>
-                &lt;thead&gt;<br>
-                &lt;tr&gt;<br>
-                &lt;th&gt;#&lt;/th&gt;<br>
-                &lt;th&gt;Column 2&lt;/th&gt;<br>
-                &lt;th&gt;Column 3&lt;/th&gt;<br>
-                &lt;th&gt;Column 4&lt;/th&gt;<br>
-                &lt;th&gt;Column 5&lt;/th&gt;<br>
-                &lt;/tr&gt;<br>
-                &lt;/thead&gt;<br>
-                &lt;tbody&gt;<br>
-                &lt;tr&gt;<br>
-                &lt;td&gt;1&lt;/td&gt;<br>
-                &lt;td&gt;Content 2&lt;/td&gt;<br>
-                &lt;td&gt;Content 3&lt;/td&gt;<br>
-                &lt;td&gt;Content 4&lt;/td&gt;<br>
-                &lt;td&gt;Content 5&lt;/td&gt;<br>
-                &lt;/tr&gt;<br>
-                &lt;tr&gt;<br>
-                &lt;td&gt;2&lt;/td&gt;<br>
-                &lt;td&gt;Content 2&lt;/td&gt;<br>
-                &lt;td&gt;Content 3&lt;/td&gt;<br>
-                &lt;td&gt;Content 4&lt;/td&gt;<br>
-                &lt;td&gt;Content 5&lt;/td&gt;<br>
-                &lt;/tr&gt;<br>
-                &lt;/tbody&gt;<br>
-                &lt;/table&gt;<br>
-            </div>
-            <div class="demo__control__element">
-                <table color="">
-                    <thead>
-                        <tr>
-                            <th>#</th>
-                            <th>Column 2</th>
-                            <th>Column 3</th>
-                            <th>Column 4</th>
-                            <th>Column 5</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>1</td>
-                            <td>Content 2</td>
-                            <td>Content 3</td>
-                            <td>Content 4</td>
-                            <td>Content 5</td>
-                        </tr>
-                        <tr>
-                            <td>2</td>
-                            <td>Content 2</td>
-                            <td>Content 3</td>
-                            <td>Content 4</td>
-                            <td>Content 5</td>
-                        </tr>
-                    </tbody>
-                </table>
+                <div class="demo__control__source">
+                    &lt;table color=""&gt;<br>
+                    &lt;thead&gt;<br>
+                    &lt;tr&gt;<br>
+                    &lt;th&gt;#&lt;/th&gt;<br>
+                    &lt;th&gt;Column 2&lt;/th&gt;<br>
+                    &lt;th&gt;Column 3&lt;/th&gt;<br>
+                    &lt;th&gt;Column 4&lt;/th&gt;<br>
+                    &lt;th&gt;Column 5&lt;/th&gt;<br>
+                    &lt;/tr&gt;<br>
+                    &lt;/thead&gt;<br>
+                    &lt;tbody&gt;<br>
+                    &lt;tr&gt;<br>
+                    &lt;td&gt;1&lt;/td&gt;<br>
+                    &lt;td&gt;Content 2&lt;/td&gt;<br>
+                    &lt;td&gt;Content 3&lt;/td&gt;<br>
+                    &lt;td&gt;Content 4&lt;/td&gt;<br>
+                    &lt;td&gt;Content 5&lt;/td&gt;<br>
+                    &lt;/tr&gt;<br>
+                    &lt;tr&gt;<br>
+                    &lt;td&gt;2&lt;/td&gt;<br>
+                    &lt;td&gt;Content 2&lt;/td&gt;<br>
+                    &lt;td&gt;Content 3&lt;/td&gt;<br>
+                    &lt;td&gt;Content 4&lt;/td&gt;<br>
+                    &lt;td&gt;Content 5&lt;/td&gt;<br>
+                    &lt;/tr&gt;<br>
+                    &lt;/tbody&gt;<br>
+                    &lt;/table&gt;<br>
+                </div>
+                <div class="demo__control__element">
+                    <table color="">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Column 2</th>
+                                <th>Column 3</th>
+                                <th>Column 4</th>
+                                <th>Column 5</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>Content 2</td>
+                                <td>Content 3</td>
+                                <td>Content 4</td>
+                                <td>Content 5</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Content 2</td>
+                                <td>Content 3</td>
+                                <td>Content 4</td>
+                                <td>Content 5</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="demo__control__source__full-screen">
+                    <span class="material-icons-outlined icon-button" color="warn"
+                        onclick="fullScreenDemo('tables__demo')">
+                        fullscreen
+                    </span>
+                </div>
             </div>
         </div>
     </div>
